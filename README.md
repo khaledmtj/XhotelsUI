@@ -1,8 +1,8 @@
 # XhotelsUI
 
 To run the project perform the commands:
-npm install
-npm run start
+#### npm install
+#### npm run start
 
 ## Development server
 
