@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="my-4">
+        <h1>Booking information</h1>
+    </div>
+    <div class="my-4">
+        <h3>Booking successful!</h3>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <span>Reservation Date: {{reservationInformation.reservationDate}}</span>
+        </div>
+        <div class="col-6">
+            <span>Number of Nights: {{reservationInformation.numberOfNights}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <span>Total Price: {{reservationInformation.totalPrice}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="my-2">
+            <h5>Room information</h5>
+        </div>
+        <div class="col-6">
+            <span>Room number: {{reservationInformation.room.number}}</span>
+        </div>
+        <div class="col-6">
+            <span>Room floor: {{reservationInformation.room.floor}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center my-3">
+            <button class="btn btn-primary" (click)="onNext()">Back to Home</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="container">
+    <form [formGroup]="formGroup">
+        <div class="my-4">
+            <h1>Fill out your personal info</h1>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <span>FirstName: </span>
+                <mat-form-field appearance="outline">
+                    <mat-label>FirstName</mat-label>
+                    <input matInput formControlName="firstName">
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <span>LastName: </span>
+                <mat-form-field appearance="outline">
+                    <mat-label>LastName</mat-label>
+                    <input matInput formControlName="lastName">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <span>Address: </span>
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput formControlName="address">
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <span>Phone Number: </span>
+                <mat-form-field appearance="outline">
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput formControlName="phoneNumber">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <span>Email: </span>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <span>Date Of Birth: </span>
+                <mat-form-field appearance="outline">
+                    <mat-label>Date Of Birth</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="dateOfBirth">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" (click)="onNext()">Next</button>
+            </div>
+        </div>
+    </form>
+</div>
